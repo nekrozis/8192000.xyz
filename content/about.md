@@ -27,7 +27,7 @@ transparent = true
 
 ---
 
-> 我的代码可能不够优雅，但它源自对底层原理最纯粹的好奇心。
+> 我的代码可能不够优雅，但它源自最直接、最朴素的好奇心。
 
 Focus: Efficiency, Minimalism, and Automation  
 OS: Windows & GNU/Linux, btw, Arch all the way.
