@@ -2,7 +2,9 @@ base_url = "https://blog.8192000.xyz/"
 compile_sass = true
 build_search_index = true
 title = "nekrozis's Blog"
-description = "Powered by Zola and Linkita."
+description = "A personal lab: documenting practice and shaping code."
+
+generate_feeds = true
 
 theme = "linkita"
 
@@ -10,25 +12,25 @@ theme = "linkita"
 highlight_code = true
 highlight_theme = "base16-ocean-dark"
 
+taxonomies = [
+    { name = "categories", paginate_by = 5, feed = true },
+    { name = "tags", paginate_by = 10, feed = true },
+]
+
 [extra]
-# 默认作者ID
 author = "nekrozis"
-# 启用 KaTeX 数学公式
 math = true
-# 启用 Mermaid 图表
 mermaid = true
 comment = false
-# 启用顶部菜单
 header_menu_name = "main_menu"
+date_format = "%B %e, %Y"
 
 [extra.footer]
 since = 2024
 license_url = "https://creativecommons.org/licenses/by-sa/4.0/deed.zh"
-# 版权页使用真名 Hsü Ching
 copyright = "&copy; $YEAR Hsü Ching | [CC BY-SA 4.0]($LICENSE_URL)"
 
 [extra.menus]
-# 菜单项改为英文
 main_menu = [
   { url = "$BASE_URL/blog/", name = "Archive" },
   { url = "$BASE_URL/categories/", name = "Categories" },

@@ -1,5 +1,5 @@
 +++
-title = "主页 - 学习与记录 (Learning & Recording)"
+title = "nekrozis's Lab"
 template = "index.html"
 
 # Linkita 主题配置
