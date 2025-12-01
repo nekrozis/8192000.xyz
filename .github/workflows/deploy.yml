@@ -1,0 +1,33 @@
+name: Deploy Zola to Cloudflare Pages
+
+on:
+  push:
+    branches:
+      - main # 更改为您部署的分支，例如 master
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: ⬇️ Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          submodules: true # 确保拉取 Zola 主题（Linkita 是以 submodule 方式添加的）
+
+      - name: 🛠️ Install Zola
+        # 使用一个包含 Zola 的 action 或直接下载安装
+        uses: taiki-e/install-action@zola
+
+      - name: 📦 Build Zola Site
+        run: zola build
+
+      - name: 🚀 Deploy to Cloudflare Pages
+        uses: cloudflare/pages-action@v1
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          projectName: ${{ secrets.CLOUDFLARE_PROJECT_NAME }}
+          directory: ./public # Zola 网站的输出目录
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}

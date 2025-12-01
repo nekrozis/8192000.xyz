@@ -1,16 +1,49 @@
-# The URL the site will be built for
 base_url = "https://8192000.xyz"
-
-# Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
-
-# Whether to build a search index to be used later on by a JavaScript library
 build_search_index = true
+title = "nekrozis's Blog"
+description = "Powered by Zola and Linkita."
+
+theme = "linkita"
 
 [markdown]
-# Whether to do syntax highlighting
-# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
 highlight_code = true
+highlight_theme = "base16-ocean-dark"
 
 [extra]
-# Put all your custom variables here
+# 默认作者ID
+author = "nekrozis"
+# 启用 KaTeX 数学公式
+math = true
+# 启用 Mermaid 图表
+mermaid = true
+comment = false
+# 启用顶部菜单
+header_menu_name = "main_menu"
+
+[extra.footer]
+since = 2024
+license_url = "https://creativecommons.org/licenses/by-sa/4.0/deed.zh"
+# 版权页使用真名 Hsü Ching
+copyright = "&copy; $YEAR Hsü Ching | [CC BY-SA 4.0]($LICENSE_URL)"
+
+[extra.menus]
+# 菜单项改为英文
+main_menu = [
+  { url = "$BASE_URL/blog/", name = "Archive" },
+  { url = "$BASE_URL/categories/", name = "Categories" },
+  { url = "$BASE_URL/tags/", name = "Tags" },
+  { url = "$BASE_URL/about/", name = "About" },
+]
+
+[extra.profiles.nekrozis]
+name = "nekrozis"
+bio = "The understanding does not derive its laws from nature, but imposes them upon it."
+avatar_url = "/avatar.png"
+avatar_alt = "nekrozis profile avatar"
+
+social = [
+    { name = "github", url = "https://github.com/nekrozis" },
+    { name = "email", url = "mailto:mgal25@outlook.com" },
+    { name = "rss", url = "$BASE_URL/atom.xml" },
+]
