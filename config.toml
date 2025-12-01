@@ -1,4 +1,4 @@
-base_url = "https://8192000.xyz"
+base_url = "https://blog.8192000.xyz/"
 compile_sass = true
 build_search_index = true
 title = "nekrozis's Blog"
