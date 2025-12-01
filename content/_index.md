@@ -6,4 +6,4 @@ template = "index.html"
 extra.profile = "nekrozis" 
 +++
 
-## ☕ 欢迎。这是我学习历程的静态日志。
+## ☕ 欢迎，这是我记录学习历程的地方。

@@ -30,4 +30,4 @@ transparent = true
 > 我的代码可能不够优雅，但它源自对底层原理最纯粹的好奇心。
 
 Focus: Efficiency, Minimalism, and Automation  
-OS: Linux (I use Arch, btw)
+OS: Windows & GNU/Linux, btw, Arch all the way.
