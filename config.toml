@@ -1,0 +1,51 @@
+base_url = "https://blog.8192000.xyz/"
+compile_sass = true
+build_search_index = true
+title = "nekrozis's Blog"
+description = "A personal lab: documenting practice and shaping code."
+
+generate_feeds = true
+
+theme = "linkita"
+
+[markdown]
+highlight_code = true
+highlight_theme = "base16-ocean-dark"
+
+taxonomies = [
+    { name = "categories", paginate_by = 5, feed = true },
+    { name = "tags", paginate_by = 10, feed = true },
+]
+
+[extra]
+author = "nekrozis"
+math = true
+mermaid = true
+comment = false
+header_menu_name = "main_menu"
+date_format = "%B %e, %Y"
+
+[extra.footer]
+since = 2024
+license_url = "https://creativecommons.org/licenses/by-sa/4.0/deed.zh"
+copyright = "&copy; $YEAR Hsü Ching | [CC BY-SA 4.0]($LICENSE_URL)"
+
+[extra.menus]
+main_menu = [
+  { url = "$BASE_URL/blog/", name = "Archive" },
+  { url = "$BASE_URL/categories/", name = "Categories" },
+  { url = "$BASE_URL/tags/", name = "Tags" },
+  { url = "$BASE_URL/about/", name = "About" },
+]
+
+[extra.profiles.nekrozis]
+name = "nekrozis"
+bio = "The understanding does not derive its laws from nature, but imposes them upon it."
+avatar_url = "/avatar.png"
+avatar_alt = "nekrozis profile avatar"
+
+social = [
+    { name = "github", url = "https://github.com/nekrozis" },
+    { name = "email", url = "mailto:mgal25@outlook.com" },
+    { name = "rss", url = "$BASE_URL/atom.xml" },
+]
