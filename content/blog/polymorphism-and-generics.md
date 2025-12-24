@@ -5,6 +5,8 @@ description = "An analysis of polymorphism from the perspective of programming m
 date = 2025-12-24
 updated = 2025-12-24
 
+[taxonomies]
+authors = ["nekrozis"]
 categories = ["PL"]
 
 tags = [
@@ -28,8 +30,6 @@ tags = [
   "Rust",
   "C++"
 ]
-
-draft = false
 
 [extra]
 math = false

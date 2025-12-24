@@ -4,6 +4,12 @@ build_search_index = true
 title = "nekrozis's Blog"
 description = "A personal lab: documenting practice and shaping code."
 
+taxonomies = [
+  { name = "tags", feed = true, paginate_by = 4 },
+  { name = "categories", feed = true, paginate_by = 4 },
+  { name = "authors", feed = true, paginate_by = 4 },
+]
+
 generate_feeds = true
 
 theme = "linkita"
@@ -14,21 +20,6 @@ skip_prefixes = ["https://blog.8192000.xyz"]
 [markdown]
 highlight_code = true
 highlight_theme = "base16-ocean-dark"
-
-[[taxonomies]]
-name = "categories"
-feed = true
-paginate_by = 5
-
-[[taxonomies]]
-name = "tags"
-feed = true
-paginate_by = 4
-
-[[taxonomies]]
-name = "authors"
-feed = true
-paginate_by = 4
 
 [extra]
 author = "nekrozis"

@@ -5,10 +5,12 @@ description = "who I am, how I think, and why I write code."
 date = 2025-12-01
 updated = 2025-12-01
 
-categories = ["Life"]
-
 transparent = true
-draft = false
+
+[taxonomies]
+authors = ["nekrozis"]
+categories = ["Life"]
+tags = []
 
 [extra]
 math = false
