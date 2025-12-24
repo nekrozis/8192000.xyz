@@ -1,6 +1,7 @@
 +++
 title = "关于我"
 transparent = true
+path = "about"
 +++
 
 **## Profile**
