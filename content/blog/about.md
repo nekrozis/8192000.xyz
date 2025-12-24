@@ -1,6 +1,20 @@
 +++
 title = "关于我"
+description = "who I am, how I think, and why I write code."
+
+date = 2025-12-01
+updated = 2025-12-01
+
 transparent = true
+
+[taxonomies]
+authors = ["nekrozis"]
+categories = ["Life"]
+tags = []
+
+[extra]
+math = false
+mermaid = false
 +++
 
 **## Profile**

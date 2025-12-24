@@ -4,18 +4,22 @@ build_search_index = true
 title = "nekrozis's Blog"
 description = "A personal lab: documenting practice and shaping code."
 
+taxonomies = [
+  { name = "tags", feed = true, paginate_by = 4 },
+  { name = "categories", feed = true, paginate_by = 4 },
+  { name = "authors", feed = true, paginate_by = 4 },
+]
+
 generate_feeds = true
 
 theme = "linkita"
 
+[link_checker]
+skip_prefixes = ["https://blog.8192000.xyz"]
+
 [markdown]
 highlight_code = true
 highlight_theme = "base16-ocean-dark"
-
-taxonomies = [
-    { name = "categories", paginate_by = 5, feed = true },
-    { name = "tags", paginate_by = 10, feed = true },
-]
 
 [extra]
 author = "nekrozis"
@@ -24,6 +28,7 @@ mermaid = true
 comment = false
 header_menu_name = "main_menu"
 date_format = "%B %e, %Y"
+use_cdn = true
 
 [extra.footer]
 since = 2024
@@ -32,7 +37,7 @@ copyright = "&copy; $YEAR Hsü Ching | [CC BY-SA 4.0]($LICENSE_URL)"
 
 [extra.menus]
 main_menu = [
-  { url = "$BASE_URL/blog/", name = "Archive" },
+  { url = "$BASE_URL/archive/", name = "Archive" },
   { url = "$BASE_URL/categories/", name = "Categories" },
   { url = "$BASE_URL/tags/", name = "Tags" },
   { url = "$BASE_URL/about/", name = "About" },
