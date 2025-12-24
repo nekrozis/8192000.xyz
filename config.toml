@@ -15,10 +15,20 @@ skip_prefixes = ["https://blog.8192000.xyz"]
 highlight_code = true
 highlight_theme = "base16-ocean-dark"
 
-taxonomies = [
-    { name = "categories", paginate_by = 5, feed = true },
-    { name = "tags", paginate_by = 10, feed = true },
-]
+[[taxonomies]]
+name = "categories"
+feed = true
+paginate_by = 5
+
+[[taxonomies]]
+name = "tags"
+feed = true
+paginate_by = 4
+
+[[taxonomies]]
+name = "authors"
+feed = true
+paginate_by = 4
 
 [extra]
 author = "nekrozis"
